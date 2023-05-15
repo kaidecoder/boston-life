@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+:root {
+    --dark-blue: #02155a;
+    --mid-blue: #5BC0F8;
+    --light-blue: #86E5FF;
+    --yellow: #ffff00;
+    --green: #47b700;
+    --light-green: #a9c334;
+    --cool-grey: #8c92ac;
+    --sage-green: #9ba17b;
+    --mustard-yellow: #f7e7b3;
+    --navy-blue: #000080;
+}
+
+.navbar_logo{
+    width: 20%;
+
+}
+
+.logo{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: var(--light-green);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    width: 100%;
+}
+
+
+
+.list {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon {
+    width: 5%;
+    display: none;
+}
+
+.fa-bars{
+    width: 100%;
+    color: var(--yellow);
+    /* display: none; */
+}
+
+@media screen and (max-width:768px){
+    .list {
+        display: none;
+    }
+    
+    .icon {
+        display: block;
+    }
+
+    
+}
+
+.food {
+    background: url("./images/pumpkin-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+li {
+    text-align: center;
+    color: var(--yellow);
+    font-family: 'Poppins', sans-serif;
+}
+
+.sports {
+    background-image: linear-gradient(rgb(57, 53, 53), rgb(37, 5, 5)), url("./images/timothy-tan-PAe2UhGo-S4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.free {
+    background-image: linear-gradient(rgb(27, 3, 3), rgba(9, 8, 8, 0.174)), url("./images/mikhail-vasilyev-gGC63oug3iY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+.cardContainer{
+    margin-top: 1em;
+
+}
+
+.title{
+    text-align: center;
+    color: var(--navy-blue);
+}
+
+.cards{
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    width: 25%;
+    box-shadow: -2px -2px 10px lightgray;
+    margin-bottom: 3em;
+    transition: transform .5s;
+    background-color: var(--mustard-yellow);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px 15px 0 0;
+}
+
+.textBlock{
+    padding: 1em;
+}
+
+.textBlock h2{
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+    color: var(--navy-blue);
+}
+
+.textBlock p{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+    font-size: .9rem;
+    color: var(--navy-blue);
+}
+
+.textBlock .btn{
+    margin: .5em 0;
+    border: 1px solid var(--yellow);
+    background-color: var(--navy-blue);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: .9rem;
+    transition: all .5s ease-in;
+    border-radius: 5px;
+    color: var(--yellow);
+}
+
+.textBlock .btn:hover{
+    background-color: var(--cool-grey);
+    color: var(--dark-blue);
+    border: 1px solid black;
+}
+
+footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    width: 100%;
+    
+}
