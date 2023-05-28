@@ -1,0 +1,1 @@
+This project gives choices of things to do around Boston.  It is built with vanilla JavaScript, and styled with SASS.
