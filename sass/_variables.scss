@@ -4,6 +4,14 @@ $yellow: #ffff00;
 $green: #47b700;
 $grey: #8c92ac;
 
+//color palette map
+$colors: (
+    "blue": $blue,
+    "yellow": $yellow,
+    "green": $green,
+    "grey": $grey
+);
+
 //spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
